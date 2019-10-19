@@ -54,6 +54,7 @@
       var smile = document.getElementById('face-smile');
 
       document.body.addEventListener("mousemove", updateEyes);
+      document.body.addEventListener("touchmove", updateEyes);
 
       function updateEyes() {
         var posx = 16 + 50*event.clientX/screen.width;
