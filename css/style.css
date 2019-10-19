@@ -48,3 +48,14 @@ d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C1
 	}
 
 }
+
+@media (max-width:700px){
+
+	.fontbot{
+		position: absolute;
+		width: 100vw;
+		height: 100vw;
+		cursor: grab;
+		bottom: 0;
+		margin: auto;
+	}
