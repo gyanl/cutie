@@ -29,9 +29,13 @@
 </head>
 
 <body>
+
+  <p class="instructions">cutie wants to play</p>
+  <p class="instructions">tap anywhere</p>
+
+
   <svg onclick="randomiseBackground()" onmouseover="smileBot()" class="fontbot" id="fontbot" width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-      <title>fontbot-3</title>
       <desc>Created with Sketch.</desc>
       <g id="fontbot" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="fontbot" transform="translate(111.000000, 66.000000)" fill-rule="nonzero">
@@ -57,7 +61,7 @@
       document.body.addEventListener("touchmove", updateEyes);
 
       function updateEyes() {
-        var posx = 16 + 50*event.clientX/screen.width;
+        var posx = 26 + 50*event.clientX/screen.width;
         var posy = 32 + 30*event.clientY/screen.height;
         //console.log(posx + " and " + posy);
         var transformAttr = ' translate(' + posx + ',' + posy + ')';
