@@ -25,10 +25,16 @@ body{
 .fontbot{
 	position: absolute;
 	width: 360px;
+	margin-bottom: -10px;
 	margin-left: 50%;
 	transform: translate(-50%,0);
 	cursor: grab;
 	bottom: 0;
+	transition: .25s;
+}
+
+.fontbot:hover{
+	margin-bottom: 0px;
 }
 
 #face-smile{
