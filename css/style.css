@@ -3,6 +3,7 @@ html{
 }
 
 body{
+	cursor: grab;
 	margin: 0;
 	display: block;
 	height: 100%;
@@ -28,7 +29,7 @@ body{
 	margin-bottom: -15px;
 	margin-left: 50%;
 	transform: translate(-50%,0);
-	cursor: grab;
+	cursor: grabbing;
 	bottom: 0;
 	transition: .25s;
 	opacity: .95;
@@ -85,6 +86,5 @@ d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C1
 	}
 
 	.fontbot{
-		cursor: grab;
 		bottom: 0;
 	}
