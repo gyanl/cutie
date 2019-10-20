@@ -3,6 +3,7 @@ html{
 }
 
 body{
+	cursor: -webkit-grab;
 	cursor: grab;
 	margin: 0;
 	display: block;
@@ -28,9 +29,14 @@ body{
 	width: 360px;
 	margin-bottom: -15px;
 	margin-left: 50%;
-	transform: translate(-50%,0);
+	-webkit-transform: translate(-50%,0);
+	    -ms-transform: translate(-50%,0);
+	        transform: translate(-50%,0);
+	cursor: -webkit-grabbing;
 	cursor: grabbing;
 	bottom: 0;
+	-webkit-transition: .25s;
+	-o-transition: .25s;
 	transition: .25s;
 	opacity: .95;
 }
@@ -45,10 +51,34 @@ d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C1
 }
 
 .smile{
-	animation-name: smile;
-	animation-duration: 3s;
-	animation-timing-function: ease-in;
-	animation-fill-mode: forwards;
+	-webkit-animation-name: smile;
+	        animation-name: smile;
+	-webkit-animation-duration: 3s;
+	        animation-duration: 3s;
+	-webkit-animation-timing-function: ease-in;
+	        animation-timing-function: ease-in;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes smile {
+
+	0% {
+		d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C191.559994,150.3 201.959994,150.3 210.6,150.3");
+	}
+
+	5% {
+     d: path("M150,150.3 C157.440006,163.633333   167.240006,170.3 179.4,170.3     C191.559994,170.3 201.959994,163.633333 210.6,150.3");
+  }
+
+	95% {
+		 d: path("M150,150.3 C157.440006,163.633333   167.240006,170.3 179.4,170.3     C191.559994,170.3 201.959994,163.633333 210.6,150.3");
+	}
+
+	100% {
+		d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C191.559994,150.3 201.959994,150.3 210.6,150.3");
+	}
+
 }
 
 @keyframes smile {
@@ -57,11 +87,11 @@ d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C1
 		d: path("M150,150.3 C157.440006,150.3        167.240006,150.3 179.4,150.3     C191.559994,150.3 201.959994,150.3 210.6,150.3");
 	}
 
-	10% {
+	5% {
      d: path("M150,150.3 C157.440006,163.633333   167.240006,170.3 179.4,170.3     C191.559994,170.3 201.959994,163.633333 210.6,150.3");
   }
 
-	90% {
+	95% {
 		 d: path("M150,150.3 C157.440006,163.633333   167.240006,170.3 179.4,170.3     C191.559994,170.3 201.959994,163.633333 210.6,150.3");
 	}
 
